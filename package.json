@@ -1,0 +1,44 @@
+{
+  "name": "sample-connector",
+  "version": "1.0.0",
+  "description": "Sample Workgrid Connector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sendFYI": "babel-node src/index.js send-fyi",
+    "sendApproval": "babel-node src/index.js send-approval",
+    "processEvents": "babel-node src/index.js process-events"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@workgrid/sdk": "0.0.5",
+    "dotenv": "^6.0.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "8.10"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  }
+}
