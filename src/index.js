@@ -37,7 +37,7 @@ function validateRequiredEnvVars(requiredVars) {
 }
 
 function getWorkgridClientInstance() {
-    validateRequiredEnvVars(['CLIENT_ID', 'CLIENT_SECRET', 'BASE_API_URL', 'TOKEN_URL'])
+    validateRequiredEnvVars(['CLIENT_ID', 'CLIENT_SECRET', 'BASE_API_URL', 'TOKEN_URL', 'USER_EMAIL'])
 
     const config = {
         clientId: process.env.CLIENT_ID,
