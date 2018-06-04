@@ -11,14 +11,15 @@ if( scriptArgs.length !== 1) {
 const sample = scriptArgs[0]
 console.log(`Running use case '${sample}'.`)
 
+const userEmail = process.env.USER_EMAIL
 const wgClient = getWorkgridClientInstance()
 
 switch(sample) {
     case 'send-fyi':
-    SendFyi.sendCard(wgClient)
+    SendFyi.sendCard(wgClient, userEmail)
         break;
     case 'send-approval':
-        SendApproval.sendCard(wgClient)
+        SendApproval.sendCard(wgClient, userEmail)
         break;
     case 'process-events': 
         ProcessEvents.processEvents(wgClient)

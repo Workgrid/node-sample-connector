@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sendFYI": "babel-node src/index.js send-fyi",
+    "sendFyi": "babel-node src/index.js send-fyi",
     "sendApproval": "babel-node src/index.js send-approval",
     "processEvents": "babel-node src/index.js process-events"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@workgrid/sdk": "0.0.5",
+    "@workgrid/sdk": "file:sdk-0.0.5.tgz",
     "dotenv": "^6.0.0",
     "lodash": "^4.17.10"
   },
