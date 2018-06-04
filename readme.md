@@ -34,7 +34,7 @@ Once you have created a space within your organization, navigate to Connectors, 
 
 You will notice a `.env.example` file located in this project.  Copy that file to `.env` file and edit it's contents.
 
-The Space ID needs to be the space id you get from the spaces overview page in the admin panel: [View Space ID](https://www.workgrid.com/docs/manage-your-space/#Viewing-the-Space-ID)
+The Space ID needs to be the space id you get from the spaces overview page in the admin panel: [View Space ID](https://www.workgrid.com/docs/manage-your-space/#viewing-the-space-id)
 
 The `CLIENT_ID` and `CLIENT_PASSWORD` should be the values you received when creating the Custom Connector.
 
