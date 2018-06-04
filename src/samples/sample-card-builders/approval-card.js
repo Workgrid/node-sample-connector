@@ -77,7 +77,7 @@ const template = {
             "url": "https://workgrid.com/workgrid-assistant-img/chart-bar.png"
         },
         "detail": {
-        	"url": "https://www.google.com"
+        	"url": "https://www.workgrid.com"
         },
     "actions": []
     }
