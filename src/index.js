@@ -1,4 +1,4 @@
-import {} from 'dotenv/config'
+import 'dotenv/config'
 import WorkgridSDK from '@workgrid/sdk'
 import ProcessEvents from './samples/process-events'
 import SendApproval from './samples/send-approval-notification'
